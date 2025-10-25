@@ -1,1 +1,84 @@
 /*  your css code here. If applicable */
+/* Body styling */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.header {
+    background-color: #011e29;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Latest News Section */
+.latest-news-section {
+    background-color: #e0f7fa; /* subtle contrast from body */
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.latest-news-section h2 {
+    margin-bottom: 15px;
+    color: #011e29;
+}
+
+.latest-news-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.latest-news-section li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Pictorial News Section */
+.pictorial-news-section {
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.pictorial-news-section h2 {
+    margin-bottom: 20px;
+    color: #011e29;
+}
+
+.news-images img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.news-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .news-images img {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .latest-news-section,
+    .pictorial-news-section {
+        width: 90%;
+        padding: 15px;
+    }
+}
